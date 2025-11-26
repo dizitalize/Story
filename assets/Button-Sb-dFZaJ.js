@@ -1,0 +1,27 @@
+import{j as s}from"./jsx-runtime-DF2Pcvd1.js";import{R as m}from"./index-B2-qRKKC.js";import{c as w}from"./classNames-2dOUpm6k.js";const I="_button_ipz3j_1",q="_hasStartIcon_ipz3j_406",T="_hasEndIcon_ipz3j_410",R="_iconStart_ipz3j_414",S="_iconEnd_ipz3j_421",x="_fullWidth_ipz3j_429",B="_disabled_ipz3j_434",N="_loading_ipz3j_439",E="_spinner_ipz3j_445",V="_spin_ipz3j_445",e={button:I,"variant-contained":"_variant-contained_ipz3j_26","variant-outlined":"_variant-outlined_ipz3j_48","variant-soft":"_variant-soft_ipz3j_75","variant-tertiary":"_variant-tertiary_ipz3j_96","size-sm":"_size-sm_ipz3j_118","size-md":"_size-md_ipz3j_125","size-lg":"_size-lg_ipz3j_132","shape-default":"_shape-default_ipz3j_140","shape-rounded":"_shape-rounded_ipz3j_144","tone-error":"_tone-error_ipz3j_151","tone-warning":"_tone-warning_ipz3j_212","tone-success":"_tone-success_ipz3j_273","state-hover":"_state-hover_ipz3j_334","tone-default":"_tone-default_ipz3j_337","state-active":"_state-active_ipz3j_354","state-focus":"_state-focus_ipz3j_374","state-disabled":"_state-disabled_ipz3j_390",hasStartIcon:q,hasEndIcon:T,iconStart:R,iconEnd:S,fullWidth:x,disabled:B,loading:N,spinner:E,spin:V};function C(i,{variant:l="contained",size:r="md",shape:d="default",tone:o="default",state:a="default",startIcon:p,endIcon:t,fullWidth:n,loading:u,disabled:f,className:c=""}){return w(i,e[`variant-${l}`],e[`size-${r}`],e[`shape-${d}`],e[`tone-${o}`],e[`state-${a}`],!!p&&e.hasStartIcon,!!t&&e.hasEndIcon,n&&e.fullWidth,f&&e.disabled,u&&e.loading,c)}const _=m.memo(m.forwardRef(({label:i,variant:l="contained",size:r="md",shape:d="default",tone:o="default",loading:a=!1,fullWidth:p=!1,startIcon:t,endIcon:n,state:u="default",className:f="",disabled:c,children:v,"aria-label":h,"aria-busy":z,...j},y)=>{const b=c||a,g=C(e.button,{variant:l,size:r,shape:d,tone:o,state:u,startIcon:t,endIcon:n,fullWidth:p,loading:a,disabled:c,className:f});return s.jsxs("button",{ref:y,className:g,disabled:b,"aria-label":h||i,"aria-busy":z||a,"data-variant":l,"data-size":r,"data-shape":d,"data-tone":o,"data-state":u,...j,children:[a?s.jsx("span",{className:e.spinner,"aria-hidden":"true",children:"⏳"}):t&&s.jsx("span",{className:e.iconStart,"aria-hidden":"true",children:t}),s.jsx("span",{className:e.label,children:v||i}),!a&&n&&s.jsx("span",{className:e.iconEnd,"aria-hidden":"true",children:n})]})}));_.displayName="Button";_.__docgenInfo={description:`Button component with multiple variants, sizes, shapes, tones, and states
+
+Features:
+- 4 variants: contained, outlined, soft, tertiary
+- 3 sizes: sm, md, lg
+- 2 shapes: default (square), rounded
+- 4 tones: default, warning, error, success
+- 5 states: default, focus, hover, active, disabled
+- Icon support via startIcon and endIcon
+- Loading state with spinner
+- Full width option
+
+@example
+\`\`\`tsx
+<Button
+  label="Click me"
+  variant="contained"
+  size="md"
+  tone="success"
+  startIcon={<Icon name="check" />}
+/>
+\`\`\``,methods:[],displayName:"Button",props:{className:{required:!1,tsType:{name:"string"},description:"Additional CSS class names",defaultValue:{value:'""',computed:!1}},style:{required:!1,tsType:{name:"ReactCSSProperties",raw:"React.CSSProperties"},description:"Inline styles"},"data-testid":{required:!1,tsType:{name:"string"},description:"Test ID for testing"},disabled:{required:!1,tsType:{name:"boolean"},description:""},loading:{required:!1,tsType:{name:"boolean"},description:"",defaultValue:{value:"false",computed:!1}},fullWidth:{required:!1,tsType:{name:"boolean"},description:"",defaultValue:{value:"false",computed:!1}},label:{required:!1,tsType:{name:"string"},description:"Button label text"},variant:{required:!1,tsType:{name:"union",raw:'"contained" | "outlined" | "soft" | "tertiary"',elements:[{name:"literal",value:'"contained"'},{name:"literal",value:'"outlined"'},{name:"literal",value:'"soft"'},{name:"literal",value:'"tertiary"'}]},description:`Button variant style
+@default "contained"`,defaultValue:{value:'"contained"',computed:!1}},size:{required:!1,tsType:{name:"union",raw:'"sm" | "md" | "lg"',elements:[{name:"literal",value:'"sm"'},{name:"literal",value:'"md"'},{name:"literal",value:'"lg"'}]},description:`Button size
+@default "md"`,defaultValue:{value:'"md"',computed:!1}},shape:{required:!1,tsType:{name:"union",raw:'"default" | "rounded"',elements:[{name:"literal",value:'"default"'},{name:"literal",value:'"rounded"'}]},description:`Button shape - corner radius style
+@default "default"`,defaultValue:{value:'"default"',computed:!1}},tone:{required:!1,tsType:{name:"union",raw:'"default" | "warning" | "error" | "success"',elements:[{name:"literal",value:'"default"'},{name:"literal",value:'"warning"'},{name:"literal",value:'"error"'},{name:"literal",value:'"success"'}]},description:`Button color tone/theme
+@default "default"`,defaultValue:{value:'"default"',computed:!1}},startIcon:{required:!1,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:"Icon/element to display before text"},endIcon:{required:!1,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:"Icon/element to display after text"},state:{required:!1,tsType:{name:"union",raw:'"default" | "focus" | "hover" | "active" | "disabled"',elements:[{name:"literal",value:'"default"'},{name:"literal",value:'"focus"'},{name:"literal",value:'"hover"'},{name:"literal",value:'"active"'},{name:"literal",value:'"disabled"'}]},description:`Visual state for styling (typically set by parent or during interactions)
+@default "default"`,defaultValue:{value:'"default"',computed:!1}}}};export{_ as B};
